@@ -1,0 +1,103 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="lstyle.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+    <script src="lapp.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><span class="title">Quick Weather Lookup</span></h1>
+        <div id="locationHeading">
+            <h3>
+                <span class="title">
+                    <span id="city">City</span>,
+                    <span id="state">State</span>,
+                    <span id="country">United States</span>
+                </span>
+            </h3>
+        </div>
+
+    </header>
+    <section id="left">
+        <form id="cityForm">
+            <h5 id="formHeading">Please Enter The Following:</h5>
+            <label id="buttonLabel">City</label>
+            <br>
+            <input type="text" id="cityTextBox">
+            <br><br>
+            <label id="buttonLabel">State</label>
+            <br>
+            <select name="drop-down" id="drop-down">
+            </select>
+            <br>
+            <input type="submit" id="citySubmit" value="Search by City, State">
+        </form>
+            <h5>OR</h5>
+        <form id="zipForm">
+            <label id="buttonLabel">Zip Code</label>
+            <br>
+            <input type="text" id="zipBox" name="city">
+            <br>
+            <input type="submit" id="zipCodeSearch" value="Search by Zip Code">
+        </form>
+    </section>
+    <main>
+    <div id="top-left" > 
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgTKKTdakWTlc7iJEDXiDX8jtnqE5dIV8r7w&usqp=CAU" alt="Weather Icon" id="weatherImage">
+    </div>
+    <div  id="top-right">
+        <h2>Current Temp <br><br><span id="mainTemp">XX.X</span> °F</h2>
+        <br>
+        <h4>Feels Like: <br><span id="feelTemp">XX.X</span>°F</h4>
+        <br>
+        <h5>Min-Temp: <span id="minTemp">XX.X</span>°F
+           | Max-Temp: <span id="maxTemp">XX.X</span>°F</h5>
+        <br>
+    </div>
+    <div id="bottom-left">
+        <p>Humidity: <br><br><span id="humidity">XX</span>%</p> 
+        <p>Wind Speed: <br><br><span id="windSpeed">X</span> mph</p>
+    </div>
+    <div id="bottom-right">
+        <p>Description of Weather</p>
+        <h2 id="description">(Set Location First)</h2>
+        <p>Clock: <span id="time">(Set Location First)</span><br>
+           Date: <span id="date">(Set Location First)</span><br>
+        </p>
+    </div>    
+    </main>
+    <footer>
+    <div>
+        <p id="firstDay">Day 1</p>
+        <p>Max: <span id="dayOneMax">XX.X</span>°F <br>Min: <span id="dayOneMin">XX.X</span>°F</p>
+    </div>
+    <div>
+        <p id="secondDay">Day 2</p>
+        <p>Max: <span id="dayTwoMax">XX.X</span>°F <br>Min: <span id="dayTwoMin">XX.X</span>°F</p>
+    </div>
+    <div>
+        <p id="thirdDay">Day 3</p>
+        <p>Max: <span id="dayThreeMax">XX.X</span>°F <br>Min: <span id="dayThreeMin">XX.X</span>°F</p>
+    </div>
+    <div>
+        <p id="fourthDay">Day 4</p>
+        <p>Max: <span id="dayFourMax">XX.X</span>°F <br>Min: <span id="dayFourMin">XX.X</span>°F</p>
+    </div>
+    <div>
+        <p id="fifthDay">Day 5</p>
+        <p>Max: <span id="dayFiveMax">XX.X</span>°F <br>Min: <span id="dayFiveMin">XX.X</span>°F</p>
+    </div>    
+    
+    </footer>
+</body>
+</html>
